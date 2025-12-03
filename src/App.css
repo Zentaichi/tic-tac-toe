@@ -1,0 +1,85 @@
+body {
+  background: #23272f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.game-header h1 {
+  color: #31ec66;
+  font-size: 2.8rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.subtitle {
+  color: #b0b3b8;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.game-board {
+  background: #181a20;
+  padding: 28px 32px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  display: inline-block;
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-row:not(:last-child) .square {
+  border-bottom: 4px solid #444;
+}
+
+.board-row .square:not(:last-child) {
+  border-right: 4px solid #444;
+}
+
+.square {
+  background: #23272f;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  height: 80px;
+  width: 80px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.square:hover {
+  background: #2c313a;
+}
+
+.square:focus {
+  outline: 2px solid #31ec66;
+}
+
+.square:active {
+  background: #1a1d23;
+}
